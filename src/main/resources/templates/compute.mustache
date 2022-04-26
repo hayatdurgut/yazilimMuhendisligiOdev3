@@ -29,35 +29,22 @@
             <div class="col-8 mx-auto">
               <div class="card mt-4">
                 <div class="card-body">
-                  <form>
+                  <form action="compute" method="post">
                     <div class="row">
                       <div class="col-6">
                         <div class="mb-3 row g-3 align-items-center">
                           <div class="col-auto">
-                            <label for="vize1_not" class="form-label"
-                              >Vize 1</label
-                            >
+                            <label for="vize_not" class="form-label"
+                              >Vize
+                            </label>
                           </div>
                           <div class="col-auto">
-                            <input
-                              type="number"
+                            <textarea
                               class="form-control"
-                              id="vize1_not"
-                            />
-                          </div>
-                        </div>
-                        <div class="mb-3 row g-3 align-items-center">
-                          <div class="col-auto">
-                            <label for="vize2_not" class="form-label"
-                              >Vize 2</label
+                              id="vize_not"
+                              name="vize_not"
                             >
-                          </div>
-                          <div class="col-auto">
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="vize2_not"
-                            />
+                            </textarea>
                           </div>
                         </div>
                       </div>
@@ -73,6 +60,7 @@
                               type="number"
                               class="form-control"
                               id="final_not"
+                              name="final_not"
                             />
                           </div>
                         </div>
@@ -87,13 +75,14 @@
                               type="number"
                               class="form-control"
                               id="proje_not"
+                              name="proje_not"
                             />
                           </div>
                         </div>
                       </div>
                       <div class="col-12">
                         <div
-                          class="mb-3 row g-3 align-items-center justify-content-center"
+                          class="mb-3 row g-3"
                         >
                           <div class="col-auto">
                             <label for="gecme_not" class="form-label"
@@ -105,6 +94,7 @@
                               type="number"
                               class="form-control"
                               id="gecme_not"
+                              name="gecme_not"
                             />
                           </div>
                         </div>
@@ -116,9 +106,9 @@
                   </form>
                 </div>
                 <div class="card-footer">
-                    <div class="alert alert-secondary" role="alert">
-                        Sonuç : {{result}}
-                      </div>
+                  <div class="alert alert-secondary" role="alert">
+                    Sonuç : {{result}}
+                  </div>
                 </div>
               </div>
             </div>
