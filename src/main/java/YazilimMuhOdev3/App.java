@@ -12,6 +12,7 @@ import java.util.Map;
 
 import spark.ModelAndView;
 import spark.template.mustache.MustacheTemplateEngine;
+import static spark.Spark.port;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,6 +28,11 @@ public class App {
 
         Logger logger = LogManager.getLogger(App.class);
         logger.error("hellooooo");
+
+        int port = Integer.parseInt(System.getenv("PORT"));
+        port(port);
+        logger.error("port number" + port);
+
 
         get("/compute",
                 (rq, rs) -> {

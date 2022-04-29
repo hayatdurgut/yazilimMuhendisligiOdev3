@@ -49,5 +49,5 @@ test {
     // Use junit platform for unit tests
     useJUnitPlatform()
 }
-task stage(dependsOn: ['build', 'clean'])
+task stage(dependsOn: ['shadowJar'])
 build.mustRunAfter clean
