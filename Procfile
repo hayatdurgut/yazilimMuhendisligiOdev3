@@ -1,1 +1,1 @@
-web: java  -jar build/libs/yazilimMuhOdev3-all.jar
+web: java -Dserver.port=$PORT -jar build/libs/YazilimMuhOdev3-all.jar
