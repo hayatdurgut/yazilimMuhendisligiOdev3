@@ -6,9 +6,46 @@ package YazilimMuhOdev3;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test
+    void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+
+    @Test
+    void testSuccessfull() {
+        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(100, 80, 90));
+        assertTrue(App.calculateExam(array, 100, 100, 50));
+    }
+
+    @Test
+    void testUnsuccessfull() {
+        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(10, 20, 30));
+        assertFalse(App.calculateExam(array, 40, 25, 50));
+
+    }
+
+    @Test
+    void testArrayEmpty() {
+        ArrayList<Integer> array = new ArrayList<>();
+        assertFalse(App.calculateExam(array, 40, 25, 50));
+    }
+
+    //@Test
+    //void testArrayNull() {
+    //assertFalse(App.calculateExam(null,40 , 25, 50));
+
+    //}
+
+    // @Test
+    // void testPassingScoreNull() {
+    //     ArrayList<Integer> array = new ArrayList<>(Arrays.asList(10, 20, 30));
+    //     assertFalse(App.calculateExam(array, 30, 40, (Integer)null));
+
+    // }
+
 }
