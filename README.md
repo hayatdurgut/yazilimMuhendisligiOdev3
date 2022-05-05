@@ -1,1 +1,1 @@
-abbcd
+Bu uygulama öğrencinin başarı durum hesaplaması için oluşturuldu.

@@ -40,7 +40,7 @@ class AppTest {
     //assertFalse(App.calculateExam(null,40 , 25, 50));
 
     //}
-
+    
     // @Test
     // void testPassingScoreNull() {
     //     ArrayList<Integer> array = new ArrayList<>(Arrays.asList(10, 20, 30));
